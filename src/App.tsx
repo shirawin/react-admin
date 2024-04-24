@@ -7,9 +7,10 @@ import {PostList} from "./components/posts"
 import PostIcon from "@mui/icons-material/Book";
 import UserIcon from "@mui/icons-material/Group";
 import { Dashboard } from "./components/dashboard";
+import {authProvider} from "./components/authProvider";
 
 export const App = () => (
-  <Admin dataProvider={dataProvider} dashboard={Dashboard}>
+  <Admin authProvider={authProvider} dataProvider={dataProvider} dashboard={Dashboard}>
     {/* <Resource name="users" list={ListGuesser} /> */}
     {/* <Resource name="users" list={UserList} /> */}
     {/* <Resource name="users" list={UserList} show={ShowGuesser} recordRepresentation="name" /> */}
