@@ -3,13 +3,16 @@
 import {  Admin,  Resource,  ListGuesser,  EditGuesser,  ShowGuesser,} from "react-admin";
 import { dataProvider } from "./dataProvider";
 import { UserList } from "./components/users";
-import {PostList} from "./components/posts"
+import {PostList} from "./components/posts";
 import PostIcon from "@mui/icons-material/Book";
 import UserIcon from "@mui/icons-material/Group";
+import PersonIcon from '@mui/icons-material/Person';
 // import PhoneIcon from "@mui/icons-material/Phone";
 import { Dashboard } from "./components/dashboard";
 import {authProvider} from "./components/authProvider";
 import {lightTheme,darkTheme} from "./theme";
+import {ReopsList} from "./components/repositories";
+import {TeamsList} from "./components/teams";
 
 
 export const App = () => (
@@ -34,14 +37,23 @@ export const App = () => (
             list={UserList}
             show={ShowGuesser}
             recordRepresentation="name"
+            icon={PersonIcon}
+        />
+    <Resource
+            name="teams"
+            list={TeamsList}
             icon={UserIcon}
         />
-    <Resource 
+    {/* <Resource 
             name="posts"
             list={PostList}
             icon={PostIcon}
+        /> */}
+    <Resource 
+            name="repositories"
+            list={ReopsList}
+            icon={PostIcon}
         />
-   
 
   </Admin>
 );
