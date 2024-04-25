@@ -5,16 +5,16 @@ import { PaletteMode } from "@mui/material";
 
 
 export const lightTheme = {
-    ...defaultTheme,
-    palette: {
-      mode: "light" as PaletteMode,
-      primary: {
-        main: "#1976d2",
-      },
-      secondary: {
-        main: "#f50057",
-      },
-    },
+    ...defaultTheme
+    // palette: {
+    //   mode: "light" as PaletteMode,
+    //   primary: {
+    //     main: "#1976d2",
+    //   },
+    //   secondary: {
+    //     main: "#f50057",
+    //   },
+    // },
   };
   
   
