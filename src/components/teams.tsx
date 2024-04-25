@@ -2,6 +2,8 @@
 
 export const TeamsList = () => {
     return(
-        <></>
+        <>
+            <p>You are not a member of any teams 😔</p>
+        </>
     );
 };
