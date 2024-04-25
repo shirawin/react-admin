@@ -7,17 +7,19 @@ import {PostList} from "./components/posts";
 import PostIcon from "@mui/icons-material/Book";
 import UserIcon from "@mui/icons-material/Group";
 import PersonIcon from '@mui/icons-material/Person';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 // import PhoneIcon from "@mui/icons-material/Phone";
 import { Dashboard } from "./components/dashboard";
 import {authProvider} from "./components/authProvider";
 import {lightTheme,darkTheme} from "./theme";
 import {ReopsList} from "./components/repositories";
 import {TeamsList} from "./components/teams";
+import ChatIconComponent from "./components/chatIcon";
 
 
 export const App = () => (
 
-
+<>
   <Admin 
       authProvider={authProvider} 
       dataProvider={dataProvider} 
@@ -44,16 +46,18 @@ export const App = () => (
             list={TeamsList}
             icon={UserIcon}
         />
-    {/* <Resource 
+    <Resource 
             name="posts"
             list={PostList}
-            icon={PostIcon}
-        /> */}
+            icon={LibraryBooksIcon}
+        />
     <Resource 
             name="repositories"
             list={ReopsList}
             icon={PostIcon}
         />
-
+  
   </Admin>
+  <ChatIconComponent />
+  </>
 );

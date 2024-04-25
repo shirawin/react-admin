@@ -3,6 +3,8 @@
 
 export const ReopsList = () => {
     return(
-        <></>
+        <>
+            <p>There is nothing to show here<b>🤷‍♀️</b></p>
+        </>
     );
 };
