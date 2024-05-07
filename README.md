@@ -39,9 +39,9 @@ You'll find an `.env` file at the project root that includes a `VITE_JSON_SERVER
 Some screens for example:
 ![image](https://github.com/shirawin/react-admin/assets/106039892/a35665cc-3b5b-4b7f-8e9d-355f739fcb3f)
 
-![image](https://github.com/shirawin/react-admin/assets/106039892/bfbc3577-9579-4704-b81b-2011b1a4184b)
+![image](https://github.com/shirawin/react-admin/assets/106039892/116fe9ef-8f2d-4a6b-9ff7-a29b48a144f7)
 
-![image](https://github.com/shirawin/react-admin/assets/106039892/7350269d-b892-4cd1-ba84-0c73a020232c)
+![image](https://github.com/shirawin/react-admin/assets/106039892/53644027-c632-460e-a842-a0664c1d0793)
 
 
 
